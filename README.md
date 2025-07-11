@@ -1,59 +1,80 @@
 # 💰 Capital Growth Calculator
 
-A modern desktop app to calculate capital growth over time with compound interest, inflation, and annually increasing contributions — all in a beautiful GUI.
+A modern Python GUI app to calculate capital growth over time with compound interest, inflation, and annually increasing cash injections — all with exportable CSV reports!
 
-Built with Python and `ttkbootstrap` for a sleek and user-friendly interface.  
-No Python setup required — just download and run the `.exe`!
+Built with [ttkbootstrap](https://github.com/israel-dryer/ttkbootstrap) for a clean, stylish interface.
 
 ---
 
 ## ✨ Features
 
-- 📈 Calculates capital growth with:
+- 📈 Calculates compound capital growth with:
   - Annual interest rate
-  - Annual inflation rate
-  - Yearly contributions adjusted for inflation
-- 💡 Real vs Nominal capital tracking
-- 📂 Export full report to a `.csv` file (auto-named with timestamp)
-- ✅ Modern, responsive interface
-- 🛑 Error handling with helpful popup messages
+  - Annual inflation
+  - Increasing yearly contributions (adjusted for inflation)
+- 🪄 Modern GUI design with input validation
+- 📊 Real vs Nominal capital tracking
+- 📂 Export results to a timestamped `.csv` report
+- 🛡️ Error handling and info popups
+- ✅ Built as `.exe` for easy distribution (see below)
 
 ---
 
+## 🖼️ Screenshot
 
-## 🚀 Download & Run
+![screenshot](assets/screenshot.png)
 
-> 💾 Simply [download the `.exe`](releases) from the [**Releases**](https://github.com/yourusername/yourrepo/releases) section and run it — no installation needed!
+> *Example of the capital growth report in a modern interface.*
 
 ---
 
-## 📤 Export Example
+## 🚀 Getting Started
 
-The app will generate a file like:
+### ✅ Prerequisites
+
+Install the required package:
+
+```bash
+pip install ttkbootstrap
+python main.py
+
+🏗️ Build .EXE (Windows)
+Use PyInstaller to convert to an executable:
+
+pip install pyinstaller
+
+pyinstaller --onefile --windowed main.py
+Output will be in the dist/ folder:
+dist/
+└── main.exe ✅
+
+📤 Export Example
+When you click "Export CSV", it will generate a file like:
 
 capital_report_2025-07-11-15-30-10.csv
-
-
-With data like:
-
 | Year | Interest | Nominal Cash Added | Total Capital (Nominal) | Total Capital (Real) |
-|------|----------|--------------------|--------------------------|-----------------------|
-| 1    | 500.00   | 500.00             | 2000.00                  | 2000.00               |
-| 2    | 1000.00  | 625.00             | 3625.00                  | 2900.00               |
-| ...  | ...      | ...                | ...                      | ...                   |
+| ---- | -------- | ------------------ | ----------------------- | -------------------- |
+| 1    | 500.00   | 500.00             | 2000.00                 | 2000.00              |
+| 2    | 1000.00  | 625.00             | 3625.00                 | 2900.00              |
+| ...  | ...      | ...                | ...                     | ...                  |
 
----
 
-## 🙌 Author
+🛠️ Technologies Used
+🐍 Python 3
 
-**Michael Zaref**  
-💼 Software Engineer  
-📧 [mzaref360@gmail.com](mailto:mzaref360@gmail.com)  
-🔗 [linkedin.com/in/michael-zaref-82ba1b1a4](https://www.linkedin.com/in/michael-zaref-82ba1b1a4/)  
-🐙 [github.com/michaelzaref](https://github.com/michaelzaref)
+🎨 ttkbootstrap (modern Tkinter theming)
 
----
+📦 csv, datetime, tkinter.filedialog
 
-## ⭐️ Show Your Support
+📄 License
+MIT License — feel free to use, modify, and distribute.
 
-If you find this project helpful, please ⭐️ the repo and share it with others!
+🙌 Author
+Michael Zaref
+💼 Software Engineer
+📧 mzaref360@gmail.com
+🔗 linkedin.com/in/michael-zaref-82ba1b1a4
+🐙 github.com/michaelzaref
+
+⭐️ Show your support
+If you like this project, please ⭐️ the repo and share it!
