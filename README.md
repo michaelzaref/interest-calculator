@@ -20,13 +20,6 @@ No Python setup required — just download and run the `.exe`!
 
 ---
 
-## 🖼️ Screenshot
-
-![screenshot](assets/screenshot.png)
-
-> Example of the capital report in action.
-
----
 
 ## 🚀 Download & Run
 
@@ -48,12 +41,6 @@ With data like:
 | 1    | 500.00   | 500.00             | 2000.00                  | 2000.00               |
 | 2    | 1000.00  | 625.00             | 3625.00                  | 2900.00               |
 | ...  | ...      | ...                | ...                      | ...                   |
-
----
-
-## 📄 License
-
-This project is open-source under the [MIT License](LICENSE).
 
 ---
 
