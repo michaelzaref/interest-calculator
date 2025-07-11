@@ -1,63 +1,73 @@
-# 💰 Capital Growth Calculator
+💰 Capital Growth Calculator
+A modern Python GUI app to calculate capital growth over time with:
 
-A modern Python GUI app to calculate capital growth over time with compound interest, inflation, and annually increasing cash injections — all with exportable CSV reports!
+✅ Compound interest
 
-Built with [ttkbootstrap](https://github.com/israel-dryer/ttkbootstrap) for a clean, stylish interface.
+✅ Inflation adjustment
 
----
+✅ Annually increasing cash injections
 
-## ✨ Features
+All with exportable CSV reports!
 
-- 📈 Calculates compound capital growth with:
-  - Annual interest rate
-  - Annual inflation
-  - Increasing yearly contributions (adjusted for inflation)
-- 🪄 Modern GUI design with input validation
-- 📊 Real vs Nominal capital tracking
-- 📂 Export results to a timestamped `.csv` report
-- 🛡️ Error handling and info popups
-- ✅ Built as `.exe` for easy distribution (see below)
+Built using ttkbootstrap for a clean, modern interface.
 
----
+✨ Features
+📈 Compound capital growth:
 
-## 🖼️ Screenshot
+Annual interest rate
 
-![screenshot](assets/screenshot.png)
+Annual inflation
 
-> *Example of the capital growth report in a modern interface.*
+Yearly contributions (inflation-adjusted)
 
----
+🪄 Modern UI with input validation
 
-## 🚀 Getting Started
+📊 Real vs Nominal capital tracking
 
-### ✅ Prerequisites
+📂 CSV export with timestamped reports
 
-Install the required package:
+🛡️ Robust error handling with info popups
 
-```bash
+✅ Executable build (.exe) for easy sharing
+
+🖼️ Screenshot
+
+
+Clean and intuitive interface for visualizing capital growth over time.
+
+🚀 Getting Started
+✅ Prerequisites
+Install dependencies and run the app:
+
+bash
+Copy
+Edit
 pip install ttkbootstrap
 python main.py
+🏗️ Build .EXE for Windows
+Use PyInstaller to build a standalone executable:
 
-🏗️ Build .EXE (Windows)
-Use PyInstaller to convert to an executable:
-
+bash
+Copy
+Edit
 pip install pyinstaller
-
 pyinstaller --onefile --windowed main.py
-Output will be in the dist/ folder:
+Output will be located in the dist/ directory:
+
+css
+Copy
+Edit
 dist/
 └── main.exe ✅
-
 📤 Export Example
-When you click "Export CSV", it will generate a file like:
+When you click “Export CSV”, a file like this will be generated:
 
 capital_report_2025-07-11-15-30-10.csv
-| Year | Interest | Nominal Cash Added | Total Capital (Nominal) | Total Capital (Real) |
-| ---- | -------- | ------------------ | ----------------------- | -------------------- |
-| 1    | 500.00   | 500.00             | 2000.00                 | 2000.00              |
-| 2    | 1000.00  | 625.00             | 3625.00                 | 2900.00              |
-| ...  | ...      | ...                | ...                     | ...                  |
 
+Year	Interest	Nominal Cash Added	Total Capital (Nominal)	Total Capital (Real)
+1	500.00	500.00	2000.00	2000.00
+2	1000.00	625.00	3625.00	2900.00
+...	...	...	...	...
 
 🛠️ Technologies Used
 🐍 Python 3
@@ -67,7 +77,7 @@ capital_report_2025-07-11-15-30-10.csv
 📦 csv, datetime, tkinter.filedialog
 
 📄 License
-MIT License — feel free to use, modify, and distribute.
+MIT License — feel free to use, modify, and share this project.
 
 🙌 Author
 Michael Zaref
@@ -76,5 +86,6 @@ Michael Zaref
 🔗 linkedin.com/in/michael-zaref-82ba1b1a4
 🐙 github.com/michaelzaref
 
-⭐️ Show your support
-If you like this project, please ⭐️ the repo and share it!
+⭐️ Show Your Support
+If you like this project, please star ⭐ the repo and share it with others!
+
