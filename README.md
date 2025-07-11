@@ -35,21 +35,13 @@
 ### 🚀 Getting Started
 ✅ Prerequisites
   Install dependencies and run the app:
-  
-  bash
-  Copy
-  Edit
   pip install ttkbootstrap
 python main.py
 ### 🏗️ Build .EXE for Windows
   Use PyInstaller to build a standalone executable:
-  
-  bash
-  Copy
-  Edit
-  pip install pyinstaller
-  pyinstaller --onefile --windowed main.py
-  Output will be located in the dist/ directory:
+      pip install pyinstaller
+      pyinstaller --onefile --windowed main.py
+      Output will be located in the dist/ directory:
   
   dist/
     └── main.exe ✅
