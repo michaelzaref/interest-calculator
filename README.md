@@ -51,9 +51,6 @@ python main.py
   pyinstaller --onefile --windowed main.py
   Output will be located in the dist/ directory:
   
-  css
-  Copy
-  Edit
   dist/
     └── main.exe ✅
 ### 📤 Export Example
